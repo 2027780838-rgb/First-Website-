@@ -1,0 +1,420 @@
+/* 
+ * CSIS1664 Website Project - Custom External Style Sheet
+ * Student Details: L. Luthuli (2027780838)
+ * Project Topic: SeatSpeed (Minibus Taxi Delay Awareness & Booking Concept)
+ * File: seatspeed-styles.css
+ */
+
+/* ==========================================================================
+   1. ROOT & BODY STYLES (Font Rules, Colors & Contrast)
+   ========================================================================== */
+body {
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #212529;
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* ==========================================================================
+   2. CONTAINER & LAYOUT (1200px Centered Container & Space Management)
+   ========================================================================== */
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #0d3b66 0%, #001f3f 100%);
+    color: #ffffff;
+    border-bottom: 4px solid #f4d35e;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+header p {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #e0e6ed;
+}
+
+       
+/* ==========================================================================
+   3. NAVIGATION & SU4 USABILITY (Current Page Indicator)
+   ========================================================================== */
+   nav{
+    background-color: #0d3b66;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-bottom:8px;
+}
+
+nav a {
+    display: block;
+    padding: 8px 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+nav a:link {
+    color: #ffffff;
+}
+
+nav a:visited {
+    color: #e0e6ed;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #f4d35e;
+    color: #0d3b66;
+    text-decoration: underline;
+}
+
+nav a:active {
+    background-color: #ee964b;
+    color: #ffffff;
+}
+
+nav a.current {
+    background-color: #f4d35e;
+    color: #0d3b66;
+    border-bottom: 3px solid #ee964b;
+}
+
+/* ==========================================================================
+   4. TYPOGRAPHY & TEXT MANIPULATION
+   ========================================================================== */
+h1, h2, h3, h4 {
+    color: #0d3b66;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+}
+
+h2 {
+    font-size: 1.75rem;
+    border-bottom: 2px solid #e0e6ed;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+
+/* ==========================================================================
+   5. BACKGROUNDS & GRADIENTS (Hero Banners & Decorative Layers)
+   ========================================================================== */
+.hero-banner {
+    background-image: linear-gradient(to bottom, rgba(13, 59, 102, 0.75) 0%, rgba(0, 31, 63, 0.9) 100%), 
+                      url("../images/long_distance.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 60px 30px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.hero-banner h2 {
+    color: #ffffff;
+    font-size: 2.25rem;
+    border-bottom: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-banner p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* ==========================================================================
+   6. FLOATS & CSS ABSOLUTE POSITIONING
+   ========================================================================== */
+
+.card-container {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.badge-absolute {
+    position: absolute;
+    top: -12px;
+    right: 15px;
+    background-color: #ee964b;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================================================
+   7. TABLES & FIGURE STYLING
+   ========================================================================== */
+figure {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    background-color: #fcfcfc;
+    border-radius: 6px;
+}
+
+figcaption {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #0d3b66;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+table, th, td {
+    border: 1px solid #cccccc;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+thead th {
+    background-color: #0d3b66;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f4f8;
+}
+
+tbody tr:hover {
+    background-color: #e6ecf2;
+}
+
+/* ==========================================================================
+   8. FORMS, INPUTS & KEYBOARD ACCESSIBILITY
+   ========================================================================== */
+form {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.35em;
+    font-weight: bold;
+    color: #0d3b66;
+}
+
+input, select, textarea, button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid #0d3b66;
+    outline-offset: 2px;
+}
+
+button, input[type="submit"] {
+    background-color: #0d3b66;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #ee964b;
+    color: #ffffff;
+}
+input[type="reset"] {
+    background-color: #e0e0e0;
+    color: #333333;
+    margin-left: 0.5rem;
+}
+
+input[type="reset"]:hover {
+    background-color: #cccccc;
+}
+
+/* Keyboard Focus Outline */
+button:focus,
+input[type="reset"]:focus {
+    outline: 3px solid #f4d35e;
+    outline-offset: 2px;
+}
+
+/* ==========================================================================
+   9. RESPONSIVE MEDIA & IMAGES
+   ========================================================================== */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+iframe {
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 4px;
+}
+/* ==========================================================================
+   FLOATED SIDEBAR LAYOUT 
+   ========================================================================== */
+.float-left {
+    float: left;
+    margin: 0 25px 15px 0;
+}
+
+.features-sidebar {
+    width: 380px;
+    background-color: #f0f4f8;
+    border: 1px solid #c0d1e3;
+    border-left: 5px solid #0d3b66;
+    padding: 15px 20px;
+    border-radius: 6px;
+}
+
+.features-sidebar h3 {
+    margin-top: 0;
+    color: #0d3b66;
+    font-size: 1.25rem;
+    border-bottom: 2px solid #ee964b;
+    padding-bottom: 5px;
+}
+
+.features-sidebar h4 {
+    color: #001f3f;
+    font-size: 1.05rem;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.features-sidebar ul {
+    padding-left: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.features-sidebar li {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.concept-description {
+    overflow: hidden;
+}
+
+
+
+/* ==========================================================================
+   11. PRINT STYLE RULES (@media print)
+   ========================================================================== */
+
+@media print {
+    body {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12pt;
+        color: #000000;
+        background-color: #ffffff;
+        background-image: none;
+    }
+
+    #container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 18pt;
+        color: #000000;
+    }
+
+    h2 {
+        font-size: 15pt;
+        color: #000000;
+        border-bottom: 1pt solid #000000;
+    }
+
+    p, td, th {
+        font-size: 12pt;
+        color: #000000;
+    }
+
+}
